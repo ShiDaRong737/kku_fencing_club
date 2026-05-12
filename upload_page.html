@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKU FENCING CLUB</title>
+</head>
+<body bgcolor="#a73b24">
+        
+        <h1 style="text-align: center; color:white">
+            KKU FENCING CLUB
+        </h1>
+        
+        <h2 style="text-align: center;color:white">
+            UPLOAD PICYURE HERE!
+        </h2>
+        <br>
+        <br>
+        <div style="text-align: center;">
+            <img id="preview" width="1000">
+            <br><br>
+            <input type="file" accept="image/*" onchange="showImage(event)">
+            <br><br>
+
+            <script>
+            function showImage(event){
+
+                var image = document.getElementById("preview");
+
+                image.src = URL.createObjectURL(event.target.files[0]);
+            }
+            </script>
+
+            <br>
+            <button>
+                UPLOAD
+            </button>    
+        </div>
+        
+
+</body>
+</html>
